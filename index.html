@@ -6,47 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>EL mundo del vino</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="grid">
     <header class="header">
-        <img class="header__logo" src="./assets/vino.png" alt="logo">
-        <a href="#menu"><img class="header__menu" src="./assets/icono.menu.png" alt="menu"></a>
-        <nav class="navbar" id="menu">
-            <ul class="navbar__enlaces">
-                <li class="navbar__item">
-                    <a href="index.html">Vinoteca</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./paginas/vinos.html">Vinos</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./paginas/destilados.html">Destilados</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./paginas/catas.html">Catas</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./paginas/contacto.html">Contacto</a>
-                </li>
-                <li class="navbar__item navbar__item--oculto">
-                    <a href="#cerrado">🔙</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-image: linear-gradient(to bottom, #56070c, #641512, #732116, #822e1a, #903a1e);"  >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Vinoteca</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./paginas/vinos.html">Vinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/destilados.html">Destilados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/catas.html">Catas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contacto
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./paginas/contacto.html">Formulario</a></li>
+                      <li><a class="dropdown-item" href="#">Locales</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <img class="header__logo" src="./assets/vino.png" alt="logo">
     </header>
     <main class="main">
         <section>
-            <article>
-                <div class="banner">
-                    <img class="banner__img" src="./assets/nietosenetiner-promo.jpg" alt="imagen">
-                    <img class="banner__img" src="./assets/colome-promo.jpg" alt="imagen">
-                    <img class="banner__img" src="./assets/jameson-taza.jpg" alt="imagen">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-            </article>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/nietosenetiner-promo.jpg" alt="imagen" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/colome-promo.jpg" alt="imagen" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/jameson-taza.jpg" alt="imagen" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             <article>
                 <div class="destacado">
                     <h2 class="destacado__1">Promos</h2>
@@ -143,8 +174,8 @@
             </div>
         </nav>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
 
