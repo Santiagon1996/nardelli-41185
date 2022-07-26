@@ -13,30 +13,37 @@
 
 <body class="grid">
     <header class="header">
-        <img class="header__logo" src="../assets/vino.png" alt="logo" width="50" height="50">
-        <a href="#menu"><img class="header__menu" src="../assets/icono.menu.png" alt="menu"></a>
-        <nav class="navbar" id="menu">
-            <ul class="navbar__enlaces">
-                <li class="navbar__item">
-                    <a href="../index.html">Vinoteca</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="../paginas/vinos.html">Vinos</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="../paginas/destilados.html">Destilados</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="../paginas/catas.html">Catas</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="../paginas/contacto.html">Contacto</a>
-                </li>
-                <li class="navbar__item navbar__item--oculto">
-                    <a href="#cerrado">🔙</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-image: linear-gradient(to bottom, #56070c, #641512, #732116, #822e1a, #903a1e);"  >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Vinoteca</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./paginas/vinos.html">Vinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/destilados.html">Destilados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/catas.html">Catas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contacto
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./paginas/contacto.html">Formulario</a></li>
+                      <li><a class="dropdown-item" href="#">Locales</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <img class="header__logo" src="./assets/vino.png" alt="logo">
     </header>
     <main class="main">
         <h2 class="vinos__title">
