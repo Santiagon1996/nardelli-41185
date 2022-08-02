@@ -4,11 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
  .grid {
     font-family: 'Roboto', sans-serif;
-
 } 
  .header {
     display: flex;
@@ -25,73 +23,25 @@
     background-image: linear-gradient(to bottom, #56070c, #641512, #732116, #822e1a, #903a1e);
     grid-area: nav;
     margin-left: 0%;
-
-
 }
-
-/* .navbar__enlaces {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-    margin-left: 0%;
-}
-
-.navbar__item {
-    margin-left: 16px;
-    font-size: 32px;
-    border: 5px solid black;
-    background-color: black;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-.navbar__item a {
-    text-decoration: none;
-    color: white;
-} */
-
 .header__logo {
     width: 50px;
     height: auto;
 }
-
-/* .header__menu {
-    width: 32px;
-    height: 32px;
-    display: none;
-}
-
-.navbar__item--oculto {
-    display: none;
-} */
-
 .main {
-
-    background-color: aliceblue;
     min-height: 100vh;
-    grid-area: main;
     width: 100%;
     margin-top: 120px;
     margin-bottom: 50px;
-
-
-
 }
-
-
 .banner__img {
     object-fit: cover;
 }
-
 .destacado {
     display: flex;
     justify-content: center;
     align-content: center
 }
-
 .destacado__1 {
     background-color: black;
     font-size: 32px;
@@ -100,33 +50,35 @@
     padding: 10px;
     margin: 10px;
     color: white;
-
 }
-
-.estanteria {
+.destacado__2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
-
+.estanteria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 .estanteria__img {
-    border: 5px solid;
+    border: 5px solid black;
     width: 235px;
     height: 235px;
     border-radius: 10px;
-
+    
 }
-
+.estanteria__img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 5px solid darkred;
+}
 .button {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
     margin-top: 10px;
     padding: 5px;
-
 }
-
 .foot {
     display: flex;
     flex-direction: row;
@@ -136,52 +88,40 @@
     background-image: linear-gradient(to bottom, #56070c, #641512, #732116, #822e1a, #903a1e);
     grid-area: foot;
 }
-
 .foot__enlaces {
     display: flex;
     flex-direction: row;
     list-style: none;
     text-decoration: none;
-
 }
-
 .foot__nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-
 .foot__mapa {
     width: 100px;
     height: 100px;
 }
-
 .foot__item {
     margin-left: 16px;
     font-size: 32px;
     border-radius: 10px;
     padding: 10px;
-
 }
-
 .foot__1 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-content: flex-start;
-
 }
-
 .foot__2 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     margin-left: 200px;
-
-
 }
-
 .foot__title {
     background-color: black;
     color: white;
@@ -192,14 +132,11 @@
     border-radius: 10px;
     padding: 10px;
 }
-
 .vinos {
     display: flex;
     justify-content: center;
     align-content: center;
-
 }
-
 .vinos__title {
     display: flex;
     justify-content: center;
@@ -211,35 +148,32 @@
     padding: 10px;
     margin: 10px;
     color: white;
-
 }
-
 .form {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-content: center;
-
-
 }
-
 .form__item {
     margin: 15px;
     padding: 1rem;
     border: 2px solid;
     list-style: none;
-
 }
-
+input:focus{
+    background-color: darkred;
+    color: black;
+    font-weight: bolder;
+}
 .catas {
     margin: 15px;
-    padding: 1rem;
+    padding: 10px;
     border: 5px solid;
 }
-
 .catas__title {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
     background-color: black;
     font-size: 32px;
@@ -249,40 +183,44 @@
     margin: 10px;
     color: white;
 }
-
 .catas__consejos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-}
-
-.consejos__info {
     margin: 15px;
     padding: 1rem;
+    border: 5px solid;
+    width: 50%;
     line-height: 1.8;
+}
+.consejos{
+    margin: 15px
+}
+.consejos-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    line-height: 1.8;
+}
 
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .catas__video{
+    margin-top: 5px;
     width: 50%;
     height: auto;
     object-fit: cover;
+    height: auto;
 }
-
-
 @media screen and (max-width: 799px) {
     .estanteria__img {
         width: 150px;
         height: 150px;
     }
-
     .header__logo {
         display: none;
     }
-
-
 }
-
 @media screen and (max-width: 599px) {
     .navbar {
         position: fixed;
@@ -291,95 +229,43 @@
         left: 0%;
         width: 100%;
         height: auto;
-        
-
-
     }
-
     .header__logo {
         display: none;
     }
-
-
-    /* .navbar__enlaces {
+    .destacado__2{
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 3rem;
-        height: 100%;
-    }
-
-    .navbar__item--oculto {
-        display: block;
-    }
-
-    .header__menu {
-        display: block;
-    }
-
-    .navbar:target {
-        display: block;
-    }
-
-    .banner {
-        display: none;
-    }*/
-
-    .estanteria {
-        flex-direction: column;
-        width: 100%;
         align-items: center;
-
-    }
-
-    .button {
-        flex-direction: column;
+        justify-content: center;
         width: 100%;
     }
-
-    /* .header__logo {
-        width: 50px;
-        height: 50px;
-        position: fixed;
-        top: 2%;
-        right: 2%;
-    } */
-
+     .button {
+        margin-bottom: 5px;
+    } 
     .foot__title {
         display: none;
     }
-
     .foot__mapa {
         display: none;
     }
-
     .header {
         height: 50px;
-
     }
-
-
     .estanteria__img {
         margin-bottom: 5px;
-
     }
-
     .destacado {
         justify-content: center;
     }
-
      .main {
         margin-bottom: 0%;
         margin-top: 60px;
     } 
-
     .foot__enlaces {
         justify-content: center;
     }
-
     .foot__1 {
         justify-content: center;
         margin-left: 0%;
-
     }
 }
