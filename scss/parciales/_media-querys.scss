@@ -1,0 +1,57 @@
+@media screen and (max-width: 799px) {
+    .estanteria__img {
+        width: 150px;
+        height: 150px;
+    }
+    .header__logo {
+        display: none;
+    }
+}
+@media screen and (max-width: 599px) {
+    .navbar {
+        position: fixed;
+        z-index: 10000000;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: auto;
+    }
+    .header__logo {
+        display: none;
+    }
+    .destacado__2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+     .button {
+        margin-bottom: 5px;
+    } 
+    .foot__title {
+        display: none;
+    }
+    .foot__mapa {
+        display: none;
+    }
+    .header {
+        height: 50px;
+    }
+    .estanteria__img {
+        margin-bottom: 5px;
+    }
+    .destacado {
+        justify-content: center;
+    }
+     .main {
+        margin-bottom: 0%;
+        margin-top: 60px;
+    } 
+    .foot__enlaces {
+        justify-content: center;
+    }
+    .foot__1 {
+        justify-content: center;
+        margin-left: 0%;
+    }
+}

@@ -1,3 +1,8 @@
-.santi{
-    color: navy;
-}
+@import "./parciales/_base.scss";
+@import "./parciales/header";
+@import "./parciales/footer";
+@import "./parciales/banner-estanteria";
+@import "./parciales/vinos";
+@import "./parciales/form";
+@import "./parciales/catas";
+@import "./parciales/media-querys";

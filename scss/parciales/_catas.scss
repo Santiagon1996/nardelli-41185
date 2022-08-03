@@ -1,0 +1,46 @@
+.catas {
+    margin: 15px;
+    padding: 10px;
+    border: 5px solid;
+}
+.catas__title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    font-size: 32px;
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+.catas__consejos {
+    margin: 15px;
+    padding: 1rem;
+    border: 5px solid;
+    width: 50%;
+    line-height: 1.8;
+}
+.consejos{
+    margin: 15px
+}
+.consejos-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    line-height: 1.8;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.catas__video{
+    margin-top: 5px;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    height: auto;
+}

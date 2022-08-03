@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+}
+.form__item {
+    margin: 15px;
+    padding: 1rem;
+    border: 2px solid;
+    list-style: none;
+}
+input:focus{
+    background-color: darkred;
+    color: black;
+    font-weight: bolder;
+}
