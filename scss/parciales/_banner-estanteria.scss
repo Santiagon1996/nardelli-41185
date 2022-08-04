@@ -4,42 +4,43 @@
 .destacado {
     display: flex;
     justify-content: center;
-    align-content: center
+    align-content: center;
+    &__1 {
+        background-color: black;
+        font-size: 32px;
+        border: 5px solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+    }
 }
-.destacado__1 {
-    background-color: black;
-    font-size: 32px;
-    border: 5px solid;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    color: white;
-}
+
 .destacado__2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.estanteria {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.estanteria__img {
-    border: 5px solid black;
-    width: 235px;
-    height: 235px;
-    border-radius: 10px;
-    
-}
-.estanteria__img:hover {
-    opacity: 0.8;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 5px solid darkred;
-}
-.button {
-    margin-top: 10px;
-    padding: 5px;
+    .estanteria {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .estanteria__img {
+        border: 5px solid black;
+        width: 235px;
+        height: 235px;
+        border-radius: 10px;
+        
+    }
+    .estanteria__img:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 5px solid darkred;
+    }
+    .button {
+        margin-top: 10px;
+        padding: 5px;
+    }
 }
