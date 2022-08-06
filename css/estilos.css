@@ -13,7 +13,7 @@
   min-height: 100vh;
   width: 100%;
   margin-top: 120px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .header {
@@ -239,7 +239,7 @@ input:focus {
   width: 50%;
   height: auto;
   object-fit: cover;
-  height: auto;
+  
 }
 
 @media screen and (max-width: 799px) {
@@ -299,4 +299,9 @@ input:focus {
     justify-content: center;
     margin-left: 0%;
   }
+  .foot__enlaces {
+    justify-content: center;
+   align-content: center;}
+
+  
 }
