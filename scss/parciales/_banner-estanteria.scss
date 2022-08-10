@@ -1,13 +1,15 @@
 .banner__img {
     object-fit: cover;
 }
+
 .destacado {
     display: flex;
     justify-content: center;
     align-content: center;
+
     &__1 {
         background-color: black;
-        font-size: 32px;
+        font-size: $titlesPricipales;
         border: 5px solid;
         border-radius: 10px;
         padding: 10px;
@@ -16,31 +18,47 @@
     }
 }
 
-.destacado__2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .estanteria {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .estanteria__img {
-        border: 5px solid black;
-        width: 235px;
-        height: 235px;
-        border-radius: 10px;
-        
-    }
-    .estanteria__img:hover {
-        opacity: 0.8;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        border: 5px solid darkred;
-    }
-    .button {
-        margin-top: 10px;
-        padding: 5px;
-    }
+// .destacado__2{
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     .estanteria {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         align-items: center;
+//     }
+.destacado__2 {
+    display: map-get($libreria , display);
+    justify-content: map-get($libreria, justify);
+    align-items: map-get($libreria, align);
+
+
+.estanteria {
+    display: map-get($libreriaItem, display);
+    flex-direction: map-get($libreriaItem, direction);
+    justify-content: map-get($libreriaItem, justify);
+    align-items: map-get($libreriaItem, align);
 }
+
+.estanteria__img {
+    border: 5px solid black;
+    width: 235px;
+    height: 235px;
+    border-radius: 10px;
+
+}
+
+.estanteria__img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 5px solid $colorPrincipal;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 5px;
+}
+}
+

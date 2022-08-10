@@ -7,12 +7,12 @@
     top: 0%;
     left: 0%;
     z-index: 10000;
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding: 32px;
     background-image: linear-gradient(to bottom, #56070c, #641512, #732116, #822e1a, #903a1e);
-    grid-area: nav;
     margin-left: 0%;
+    overflow: visible;
     .header__logo {
         width: 50px;
         height: auto;

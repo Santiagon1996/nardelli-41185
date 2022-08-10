@@ -10,7 +10,7 @@
         list-style: none;
     }
     input:focus{
-        background-color: darkred;
+        background-color: $colorPrincipal;
         color: black;
         font-weight: bolder;
     }
