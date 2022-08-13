@@ -36,8 +36,9 @@
 .estanteria__img {
     border: 5px solid black;
     width: 235px;
-    height: 235px;
+    height: 250px;
     border-radius: 10px;
+    object-fit: contain;
 
 }
 
