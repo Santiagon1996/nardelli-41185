@@ -16,6 +16,11 @@
         width: 100%;
         height: auto;
     }
+    .img-banner{
+        object-fit: cover;
+        width: 100vw;
+        height: 125px;
+    }
     .header__logo {
         display: none;
     }
