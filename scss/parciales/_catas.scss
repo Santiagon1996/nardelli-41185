@@ -3,6 +3,7 @@
     padding: 10px;
     border: 5px solid;
 }
+
 .catas__title {
     display: flex;
     justify-content: center;
@@ -15,6 +16,7 @@
     margin: 10px;
     color: white;
 }
+
 .catas__consejos {
     margin: 15px;
     padding: 1rem;
@@ -22,22 +24,25 @@
     width: 50%;
     line-height: 1.8;
 }
-.consejos{
+
+.consejos {
     margin: 15px
 }
-.consejos-container{
+
+.consejos-container {
     display: flex;
     justify-content: center;
     align-content: center;
     line-height: 1.8;
 }
 
-.video-container{
+.video-container {
     display: flex;
     justify-content: center;
     align-content: center;
 }
-.catas__video{
+
+.catas__video {
     margin-top: 5px;
     width: 50%;
     height: auto;
@@ -45,7 +50,6 @@
     height: auto;
 }
 
-.row{
+.row {
     --bs-gutter-x: 0%
-
 }

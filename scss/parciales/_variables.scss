@@ -1,12 +1,11 @@
 $colorPrincipal: darkred;
 $titlesPricipales: 32px;
 $titleSecundario: 16px;
-$libreria : (
-    display: flex,
+$libreria : (display: flex,
     justify: space-around,
     align: center,
 );
-$libreriaItem:(
+$libreriaItem: (
     display: flex,
     direction: column,
     justify: space-around,

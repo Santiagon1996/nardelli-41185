@@ -1,9 +1,9 @@
-
-.img-banner{
+.img-banner {
     object-fit: cover;
     width: 100vw;
     height: 500px;
 }
+
 .destacado {
     display: flex;
     justify-content: center;
@@ -26,32 +26,31 @@
     align-items: map-get($libreria, align);
 
 
-.estanteria {
-    display: map-get($libreriaItem, display);
-    flex-direction: map-get($libreriaItem, direction);
-    justify-content: map-get($libreriaItem, justify);
-    align-items: map-get($libreriaItem, align);
-}
+    .estanteria {
+        display: map-get($libreriaItem, display);
+        flex-direction: map-get($libreriaItem, direction);
+        justify-content: map-get($libreriaItem, justify);
+        align-items: map-get($libreriaItem, align);
+    }
 
-.estanteria__img {
-    border: 5px solid black;
-    width: 235px;
-    height: 250px;
-    border-radius: 10px;
-    object-fit: contain;
+    .estanteria__img {
+        border: 5px solid black;
+        width: 235px;
+        height: 250px;
+        border-radius: 10px;
+        object-fit: contain;
 
-}
+    }
 
-.estanteria__img:hover {
-    opacity: 0.8;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 5px solid $colorPrincipal;
-}
+    .estanteria__img:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 5px solid $colorPrincipal;
+    }
 
-.button {
-    margin-top: 10px;
-    padding: 5px;
+    .button {
+        margin-top: 10px;
+        padding: 5px;
+    }
 }
-}
-
