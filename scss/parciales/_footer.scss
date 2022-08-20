@@ -18,14 +18,15 @@
         flex-direction: row;
         list-style: none;
         text-decoration: none;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .foot__item {
         margin-left: 16px;
         font-size: 32px;
         border-radius: 10px;
-        padding: 10px;
+        
+        
     }
 
     .foot__1 figure {

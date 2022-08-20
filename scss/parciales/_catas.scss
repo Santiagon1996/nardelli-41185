@@ -1,8 +1,8 @@
 .catas {
-    margin: 15px;
     padding: 10px;
-    border: 5px solid;
+    line-height: 1.8;
 }
+
 
 .catas__title {
     display: flex;
@@ -43,8 +43,8 @@
 }
 
 .catas__video {
-    margin-top: 5px;
-    width: 50%;
+    margin: 5px 0;
+    width: 500px;
     height: auto;
     object-fit: cover;
     height: auto;
@@ -52,4 +52,15 @@
 
 .row {
     --bs-gutter-x: 0%
+}
+.img-catas{
+    width: 550px;
+    height: 350px;
+    object-fit: cover; 
+}
+.img-catas-1{
+    margin-left: 55px;
+}
+.conteiner-catas{
+    justify-content: center;
 }

@@ -5,15 +5,12 @@
   box-sizing: border-box;
 }
 
-.grid {
-  font-family: 'Roboto', sans-serif;
-}
-
 .main {
   min-height: 100vh;
   width: 100%;
   margin-top: 120px;
-  margin-bottom: 50px;
+  background-color: #F5F6F7;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -58,14 +55,13 @@
   flex-direction: row;
   list-style: none;
   text-decoration: none;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .foot .foot__item {
   margin-left: 16px;
   font-size: 32px;
   border-radius: 10px;
-  padding: 10px;
 }
 
 .foot .foot__1 figure {
@@ -142,6 +138,7 @@
   height: 250px;
   border-radius: 10px;
   object-fit: contain;
+  background-color: white;
 }
 
 .destacado__2 .estanteria__img:hover {
@@ -152,8 +149,17 @@
 }
 
 .destacado__2 .button {
-  margin-top: 10px;
+  margin: 10px 0;
   padding: 5px;
+  background-color: #0d6efd;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.destacado__2 .button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #0b5ed7;
 }
 
 .vinos {
@@ -176,9 +182,8 @@
 }
 
 .catas {
-  margin: 15px;
   padding: 10px;
-  border: 5px solid;
+  line-height: 1.8;
 }
 
 .catas__title {
@@ -220,8 +225,8 @@
 }
 
 .catas__video {
-  margin-top: 5px;
-  width: 50%;
+  margin: 5px 0;
+  width: 500px;
   height: auto;
   object-fit: cover;
   height: auto;
@@ -232,6 +237,20 @@
 ;
 }
 
+.img-catas {
+  width: 550px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.img-catas-1 {
+  margin-left: 55px;
+}
+
+.conteiner-catas {
+  justify-content: center;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -240,7 +259,7 @@
 }
 
 .form .form__item {
-  margin: 15px;
+  margin: 5px;
   padding: 1rem;
   border: 2px solid;
   list-style: none;
@@ -250,6 +269,18 @@
   background-color: darkred;
   color: black;
   font-weight: bolder;
+}
+
+.card-img-top {
+  height: 150px;
+}
+
+.conteiner-locales {
+  margin: 35px;
+}
+
+.conteiner-row {
+  justify-content: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -324,5 +355,10 @@
   .foot__1 {
     justify-content: center;
     margin-left: 0%;
+  }
+  .conteiner-locales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
