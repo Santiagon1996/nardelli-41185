@@ -87,6 +87,15 @@
        display: flex;
         align-items: center;
         justify-content: center;
-        // margin-left: 15px;
+        
+    }
+    .img-catas-1{
+        margin: 0%;
+    }
+    .img-catas{
+        width: 300px;
+        // height: 440px;
+        object-fit: contain; 
+        margin: 0%;
     }
 }
