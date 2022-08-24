@@ -1,3 +1,17 @@
+@media screen and (max-width: 1024px){
+    .img-catas {
+        width: 500px;
+        object-fit: cover;
+        margin: 0%;
+        
+    }
+    .img-catas-2{
+        height: 300px;
+        object-fit: contain;
+        width: 400px;
+    }
+
+}
 @media screen and (max-width: 799px) {
     .estanteria__img {
         width: 150px;
@@ -7,25 +21,48 @@
     .header__logo {
         display: none;
     }
+
     .foot .foot-caja-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
     }
+
     .foot__logo {
         width: 150px;
     }
+
     .img-banner {
         object-fit: cover;
         width: 100%;
         height: 250px;
 
     }
-    .destacado__2{
+
+    .destacado__2 {
         flex-wrap: wrap;
     }
- }
+
+    .catas__video {
+        object-fit: contain;
+
+    }
+
+    .img-catas {
+        object-fit: contain;
+        width: 300px;
+        height: 300px;
+    }
+
+    .conteiner-row {
+        justify-content: flex-start;
+    }
+
+    .conteiner-locales {
+        margin: 75px;
+    }
+}
 
 @media screen and (max-width: 599px) {
     .navbar {
@@ -83,19 +120,24 @@
         justify-content: center;
         margin-left: 0%;
     }
-    .conteiner-locales{
-       display: flex;
+
+    .conteiner-locales {
+        display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
-    .img-catas-1{
+
+    .img-catas-1 {
         margin: 0%;
     }
-    .img-catas{
+
+    .img-catas {
         width: 300px;
-        // height: 440px;
-        object-fit: contain; 
+        object-fit: contain;
         margin: 0%;
+    }
+    .conteiner-row {
+        justify-content: center;
     }
 }

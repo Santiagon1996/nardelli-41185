@@ -38,6 +38,10 @@
   height: auto;
 }
 
+.header .active {
+  font-weight: bolder;
+}
+
 .foot {
   background-image: linear-gradient(to bottom, #56070c, #641512, #732116, #822e1a, #903a1e);
   width: 100%;
@@ -98,6 +102,10 @@
   background-color: black;
   border-radius: 10px;
   padding: 10px;
+}
+
+.foot .foot__parrafo {
+  color: black;
 }
 
 .img-banner {
@@ -286,6 +294,19 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .img-catas {
+    width: 500px;
+    object-fit: cover;
+    margin: 0%;
+  }
+  .img-catas-2 {
+    height: 300px;
+    object-fit: contain;
+    width: 400px;
+  }
+}
+
 @media screen and (max-width: 799px) {
   .estanteria__img {
     width: 150px;
@@ -310,6 +331,20 @@
   }
   .destacado__2 {
     flex-wrap: wrap;
+  }
+  .catas__video {
+    object-fit: contain;
+  }
+  .img-catas {
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+  }
+  .conteiner-row {
+    justify-content: flex-start;
+  }
+  .conteiner-locales {
+    margin: 75px;
   }
 }
 
@@ -371,5 +406,8 @@
     width: 300px;
     object-fit: contain;
     margin: 0%;
+  }
+  .conteiner-row {
+    justify-content: center;
   }
 }
